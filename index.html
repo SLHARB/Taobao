@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<style>
+			#nav{
+				height: 100px;
+				background-color:black;
+			}
+			#daoh{
+				color: white;
+				font-size: 30px;
+				margin-top: 26px;
+				margin-left: 35px;
+			}
+			#liz{
+				height: 50px;
+				margin-top: 20px;
+				color: white;
+				background-color: #ADADAD;
+				border-radius:30px;
+				border: 0px;
+			}
+			#ssk{
+				width: 40px;
+				height: 40px;
+				margin-top: 25px;
+				
+			}
+			#butt{
+				background-color: white;
+				margin-top: 70px;
+				height: 100px;
+			}
+			#myCar img{
+				width: 100%;
+				height: 800px;
+			}
+			.fli{
+				background-color: #C9302C;
+				color: white;
+				width: 400px;
+				height: 300px;
+				margin-left: 50px;
+			}
+			.fli2{
+				background-color: #EC971F;
+				color: white;
+				margin-left: 20px;
+				width: 220px;
+				height: 300px;
+			}
+			.fli3{
+				background-color:#F0AD4E;
+				color: white;
+				margin-left: 20px;
+				width: 270px;
+				height: 300px;
+			}
+			#myCar{
+				margin-top: 50px;
+			}
+			#navtop{
+				height: 100px;
+				background-color:black;
+			}
+			#Daohang{
+				color: white;
+				font-size: 24px;
+				margin-left: 160px;
+			}
+			#Daohang1{
+				color:#080808;
+				font-size: 24px;
+				margin-right: 1610px;
+			}
+			#Daohang2{
+				margin-left: 10px;
+				
+			}
+			#shuigys{
+				background-color: #C0C0C0;
+				margin-top: 50px;
+				width: 790px;
+				border-radius: 150px;
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="nav navbar-fixed-top">
+			<div id="nav">
+				<div class="row">
+					<div class="col-sm-1">
+						<span class="glyphicon glyphicon-map-marker" id="daoh"></span>
+					</div>
+					<div class="col-sm-10">
+						<input type="text" class=" form-control" value="车厘子" id="liz"/>
+						
+					</div>
+					<div class="col-sm-1">
+						<img src="img/搜索 (1).png" id="ssk"/>
+					</div>
+				</div>
+			</div>
+		</nav>
+		
+		<div class="carousel slide" id="myCar" data-ride="carousel" 
+			data-interval="1000" data-pause="false" data-wrap="false">
+			<ol class="carousel-indicators">
+				<!--data-target="#myCar":设置计数器的归属-->
+				<li data-target="#myCar" data-slide-to="0" class="active"></li>
+				<li data-target="#myCar" data-slide-to="1"></li>
+				<li data-target="#myCar" data-slide-to="2"></li>
+			</ol>
+			<!--放置轮播图的图片
+				item：放置每一张轮播图的内容
+				carousel-caption：放一些文字说明
+			-->
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="img/02.jpg" />
+					<div class="carousel-caption"></div>
+				</div>
+				<div class="item">
+					<img src="img/01.jpg" />
+					<div class="carousel-caption"></div>
+				</div>
+			</div>
+			<!--carousel-control：轮播图控制器
+				data-slide="prev"：切换到前一张图片
+				left/right:控制图标的显示位置
+				data-slide="next"：切换到下一张图片
+			-->
+			<a class="carousel-control lead" href="#myCar" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a class="carousel-control right" href="#myCar" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+		</div>
+		
+		
+		
+		<!--
+			slide：这个样式是为了使轮播图能平滑过渡；
+			data-ride="carousel"：在页面加载时开始播放轮播图；
+			data-interval="1000"：设置轮播图的播放间隔，单位是毫秒；
+		-->
+		
+		<br />
+		<br />
+		
+		<div class="row">
+			<div class="col-sm-5 fli text-center">
+				<br />
+				<h1>专题预售</h1>
+				<h2>带来偏远地区的原生鲜果</h2>
+				<h2>送去一份温暖的爱心</h2>
+			</div>
+			<div class="col-sm-3 fli2 text-center">
+				<br />
+				<h1>邀请好友</h1>
+				<h2>30元红包</h2>
+				<h2>等你拿</h2>
+			</div>
+			<div class="col-sm-4 fli3 text-center">
+				<br />
+				<h1>扶贫助困</h1>
+				<h2>带来自然鲜果</h2>
+				<h2>送去温暖爱心</h2>
+			</div>
+		</div>
+		
+		<div class="row" >
+			<div class="col-sm-2 col-sm-offset-1">
+				<h1 style="color:red;font-size: 50px; font: '微软雅黑';">鲜果快报</h1>
+			</div>
+			<div class="col-sm-8">
+				<div id="shuigys">
+					<span style="font-size: 30px;">
+						<a href="#" style="color: #EC971F;">&nbsp;&nbsp;&nbsp;每日 </a>| 今年的沙糖橘，为何这般的清甜!
+					</span>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		<div class="row">
+				<div class="col-sm-2 col-sm-offset-1"><h1 style="font-size: 23px;">拼团预售</h1></div>
+				<div class="col-sm-1 col-lg-offset-5"></div>
+				<div class="col-sm-3"><p style="font-size: 26px;color: #999999;">产地直果·品质保证</p></div>
+			</div>
+			
+		<div class="container">
+			
+			<div id="pint">
+				<div class="col-sm-6">
+					<img src="img/03.jpg" width="350px" style="margin-top: 35px; border-radius: 20px;" class="img-responsive" />
+				</div>
+				<div class="col-sm-6">
+					<br />
+					<b style="font-size: 40px;">甘肃静宁苹果*6约2斤</b>
+					<p style="color: #000000;"><span style="color: red;font-size: 30px;">￥30.0</span>/份</p>
+					<div class="col-sm-10 progress">
+						<div class="progress-bar progress-bar-warning" aria-valuemin="0" aria-valuemax="100" style="width: 92%;" ></div>
+					</div>
+					<div class="col-sm-2">
+						<p style="color: #ADADAD;font-size: 20PX;">92%</p>
+					</div>
+				</div><br /><br />
+				<span style="color: #9D9D9D; font-size: 20px;">
+					<img  />
+					已售2600份
+				</span>&nbsp;&nbsp;
+				<span style="color: #9D9D9D; font-size: 20px;">
+					<img  />
+					6天内发货
+				</span>
+			</div>
+			<div class="row">
+				<div class="col-sm-2 col-sm-offset-1"><b style="font-size: 45px;"></b></div>
+				<div class="col-sm-1 col-lg-offset-5"></div>
+				<div class="col-sm-2"><p style="font-size: 30px;color: #999999;"></p></div>
+			</div><br /><br />
+			<div class="row">
+			<br /><br />
+				<div class="col-sm-2 col-sm-offset-1"><b style="font-size: 30px;">热卖优惠</b></div>
+				<div class="col-sm-1 col-sm-offset-5"></div>
+				<div class="col-sm-3"><p  style="font-size: 26px;color: #C0BABC;">人气热销·大众喜欢</p></div>
+			</div>
+			
+		</div>
+		<br /><br />
+		<div class="container">
+			<hr class="text-center" width="80%" />
+			<div class="row text-center">
+				<div class="col-sm-3 col-sm-offset-1">
+					<img src="img/08.jpg" style="height: 230px;" class="img-responsive" />
+					<h2 style="font-size: 32px;">广东四会砂糖橘...</h2>
+					<p style="color: red;font-size: 25px;">￥26.0
+					<span style="color: #777777;font-size: 20px;">/份</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<img src="img/添加购物车.png" />
+					</p>
+				</div>
+				<div class="col-sm-3" style="margin-left: 50px;">
+					<img src="img/05.jpg" style="height: 220px;width=500px" class="img-responsive" />
+					<h2 style=""font-size: 32px;"">智利JJ级车厘子....</h2>
+					<p style="color: red;font-size: 25px;">￥69.0
+					<span style="color: #777777;font-size: 20px;">/份</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<img src="img/添加购物车.png" />
+					</p>
+				</div>
+				<div class="col-sm-3" style="margin-left: 50px;">
+					<img src="img/06.jpg" style="height: 230px;" class="img-responsive" />
+					<h2 style="font-size: 32px;">海南陵水圣女果...</h2>
+					<p style="color: red;font-size: 25px;">￥26.0
+					<span style="color: #777777;font-size: 20px;">/份</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<img src="img/添加购物车.png" />
+					</p>
+				</div>
+				<div class="col-sm-3 col-sm-offset-1">
+					<img src="img/07.jpg" style="height: 270px;" class="img-responsive" />
+					<h2 style="font-size: 32px;">海南玉菇甜瓜...</h2>
+					<p style="color: red;font-size: 25px;">￥26.0
+					<span style="color: #777777;font-size: 20px;">/份</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<img src="img/添加购物车.png" />
+					</p>
+				</div>
+				<div class="col-sm-3" style="margin-left: 50px;">
+					<img src="img/04.jpg" style="width=450px;height: 270px;" class="img-responsive" />
+					<h2 style="font-size: 32px;">湖南麻阳冰糖橙...</h2>
+					<p style="color: red;font-size: 25px;">￥26.0
+					<span style="color: #777777;font-size: 20px;">/份</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<img src="img/添加购物车.png" />
+					</p>
+				</div>
+				<div class="col-sm-3" style="margin-left: 50px;">
+					<img src="img/10.jpg" style="width=450px;height: 270px;" class="img-responsive" />
+					<h2 style="font-size: 28px;">智利蓝莓*1盒...</h2>
+					<p style="color: red;font-size: 25px;">￥26.0
+					<span style="color: #777777;font-size: 20px;">/份</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<img src="img/添加购物车.png" />
+					</p>
+				</div>
+			</div>
+		</div>
+		<br /><br />
+			<div class="container center">
+				<div class="row">
+				<div class="col-sm-3 col-sm-offset-1"><b style="font-size: 40px;">时令新上</b></div>
+				<div class="col-sm-3 col-sm-offset-5">
+					<p style="font-size: 20px;color: #CCCCCC;margin-top: 10PX;">应季新果.优质果园</p>
+				</div>
+			</div><br />
+			<div class="row">
+				<div class="col-sm-6">
+					<img src="img/20.jpg"  style="width: 300px;"/>
+				</div>
+				<div class="col-sm-6">
+					<h1>广西百香果*约500g</h1>
+					<span style="color:#888888;font-size: 20px;">果肉细腻，酸甜可口，香果沁入</span><br /><br />
+					<span style="color: #888888;font-size: 20px;">采摘日期:06.16</span><br /><br />
+					<p style="color: red;font-size: 25px;">￥26.0</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<img src="img/21.jpg" style="height: 400px;width: 300px;" />
+				</div><br /><br />
+				<div class="col-sm-6">
+					<h1>法国嘎啦苹果*6约800g</h1>
+					<span style="color: #888888;font-size: 20px;">果肉细腻，酸甜可口，香果沁入</span><br /><br />
+					<span style="color: #888888;font-size: 20px;">采摘日期:06.16</span><br /><br />
+					<p style="color: red;font-size: 25px;">￥26.0</p>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="container">
+			<div class="row">
+				<div class="text-center">
+					<span style="font-size: 30px;">为您推荐</span>
+				</div><br />
+			</div>
+			<div class="row">
+			<div class="col-sm-6">
+				<img src="img/4.jpg"style="height: 300px;width=600px"  class="img-responsive" />
+				<h2 style="font-size: 32px;">百瑞猕猴桃*原箱22个</h2>
+				<h3>你们爱吃的徐香来了！酸甜</h3>
+				<p style="color: red;font-size: 25px;">￥54.9
+				<span style="color: #777777;font-size: 20px;">/份</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<img src="img/添加购物车.png" />
+				</p>
+			</div>
+			<div class="col-sm-6">
+				<img src="img/1.jpg" style="height: 320px;" class="img-responsive" />
+				<h2 style=""font-size: 32px;"">墨西哥牛油果*3个约5...</h2>
+				<h3>树林中的天然牛油，乳酪般...</h3>
+				<p style="color: red;font-size: 25px;">￥29.9
+				<span style="color: #777777;font-size: 20px;">/份</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<img src="img/添加购物车.png" />
+				</p>
+			</div>
+			<div class="col-sm-6">
+				<img src="img/2.jpg" style="height: 350px;" class="img-responsive" />
+				<h2 style="font-size: 32px;">云南蒙自枇杷 约400g</h2>
+				<h3>云南蒙自除了石榴，还盛产...</h3>
+				<p style="color: red;font-size: 25px;">￥40.0
+				<span style="color: #777777;font-size: 20px;">/份</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<img src="img/添加购物车.png" />
+				</p>
+			</div>
+			<div class="col-sm-6">
+				<img src="img/3.jpg" style="height: 350px;" class="img-responsive" />
+				<h2>甘肃黄蕉苹果*6个约2斤</h2>
+				<h3>酥软口感适合老人和小朋友！</h3>
+				<p style="color: red;font-size: 25px;">￥25.0
+				<span style="color: #777777;font-size: 20px;">/份</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<img src="img/添加购物车.png" />
+				</p>
+			</div>
+		</div>
+		<br /><br /><br />
+		<footer class="navbar-fixed-bottom" id="butt">
+			<div class="col-sm-3"id="tb">
+				<a href="index.html">
+					<button type="button" id="mybtn">
+						<img src="img/首页.png" width="40px" height="40px" >
+					</button>
+				</a>
+			</div>
+			<div class="col-sm-3"id="tb">
+				<a href="dier.html">
+					<button type="button" id="mybtn">
+						<img src="img/分类.png" width="40px" height="40px">
+					</button>
+				</a>
+			</div>
+			<div class="col-sm-3"id="tb">
+				<a href="disan.html">
+					<button type="button" id="mybtn">
+						<img src="img/购物车.png" width="40px" height="40px">
+					</button>
+				</a>
+			</div>
+			<div class="col-sm-3"id="tb">
+				<a href="disi.html">
+					<button type="button" id="mybtn">
+						<img src="img/我的.png" width="40px" height="40px">
+					</button>
+				</a>
+			</div>
+		</footer>
+	</body>
+</html>
